@@ -2,44 +2,23 @@
 
 <h2 style="text-align:center;">{{ search | title }}</h2>
 <div class="row">
+    {% for post in final_postings %}
     <div class="col s4">
         <div class="card">
             <div class="card-image">
-                <a href="/"><img src="/" alt=""></a>
+                <a href="{{ post.1 }}"><img src="{{ post.3}}" alt=""></a>
             </div>
             <div class="card-content">
-                <p>TEST</p>
+                <p>{{post.0}}</p>
             </div>
-            <div class="card-actions">
-                <a href="">Test Price</a>
+            <div class="card-actions style:color:yellow; text-align:center;">
+                <a href="{{ post.1}}">View listing: Price {{ post.2 }}</a>
             </div>
         </div>
     </div>
-    <div class="col s4">
-        <div class="card">
-            <div class="card-image">
-                <a href="/"><img src="/" alt=""></a>
-            </div>
-            <div class="card-content">
-                <p>TEST</p>
-            </div>
-            <div class="card-actions">
-                <a href="">Test Price</a>
-            </div>
-        </div>
-    </div>
-    <div class="col s4">
-        <div class="card">
-            <div class="card-image">
-                <a href="/"><img src="/" alt=""></a>
-            </div>
-            <div class="card-content">
-                <p>TEST</p>
-            </div>
-            <div class="card-actions">
-                <a href="">Test Price</a>
-            </div>
-        </div>
-    </div>
+    {% endfor %}
+
 </div>
-{% endblock %}
+
+
+{% endblock content %}
