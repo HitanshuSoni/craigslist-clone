@@ -27,7 +27,7 @@ SECRET_KEY = 'b26&tgdye115s-@i_mwi0292a7_pv!^93c8zy40_t(8&47^ydm'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['0.0.0.0', 'localhost', 'https://intense-sands-85421.herokuapp.com']
+ALLOWED_HOSTS = ['0.0.0.0', 'localhost', 'http://www.hiwebmadestodo.com']
 
 
 # Application definition
